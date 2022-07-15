@@ -1,0 +1,8 @@
+.about {
+    background: #232340;
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

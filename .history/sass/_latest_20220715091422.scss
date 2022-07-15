@@ -1,0 +1,13 @@
+.latest {
+    background: #f7f3f8;
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &-number {
+    }
+    &-title {
+    }
+    &-content {
+    }
+}

@@ -1,0 +1,27 @@
+.interactive {
+    background: #f7f3f8;
+    height: 752px;
+    &-number {
+        margin-top: 100px;
+        display: inline-block;
+        color: #5468e7;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    &-name {
+        display: inline-block;
+        line-height: 39px;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    &-iconleft {
+        margin-right: 19px;
+        margin-left: 594px;
+    }
+    &-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

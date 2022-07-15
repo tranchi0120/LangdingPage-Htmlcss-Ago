@@ -1,0 +1,13 @@
+.header {
+    &-top {
+        color: #666666;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-right {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}

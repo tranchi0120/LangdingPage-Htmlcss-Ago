@@ -1,0 +1,14 @@
+.about {
+    background: #232340;
+    &-main {
+        display: flex;
+    }
+    &-img1 {
+        margin-top: 100px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    &-img3 {
+        margin-left: 110px;
+    }
+}

@@ -1,0 +1,8 @@
+.hero {
+    margin-top: 55px;
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,19 @@
+.latest {
+    background: #f7f3f8;
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+        display: block;
+    }
+    &-number {
+        font-weight: 600;
+        line-height: 24px;
+        color: #5468e7;
+        font-size: 16px;
+    }
+    &-title {
+    }
+    &-content {
+    }
+}
