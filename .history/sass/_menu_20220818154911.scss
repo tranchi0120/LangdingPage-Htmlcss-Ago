@@ -1,0 +1,53 @@
+.menu {
+    height: 24px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 40px;
+    &-button {
+        display: flex;
+        gap: 29px;
+    }
+    &-icon {
+        width: 18px;
+        display: inline-block;
+        padding-top: 15px;
+        color: #666666;
+    }
+
+    &-link {
+        color: #000000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        &-toggle {
+            margin-right: 10px;
+            display: none;
+            font-size: 30px;
+            color: black;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+        &-button {
+            display: none;
+        }
+        &-toggle {
+            display: block;
+        }
+    }
+    @media screen and (max-width: 414px) {
+        &-toggle {
+            display: block;
+        }
+        &-icon {
+            margin-left: 110px;
+        }
+    }
+}

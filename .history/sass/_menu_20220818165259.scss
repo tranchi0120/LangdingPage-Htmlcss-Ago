@@ -1,0 +1,109 @@
+.menu {
+    height: 24px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 40px;
+    &-button {
+        display: flex;
+        gap: 29px;
+    }
+    &-icon {
+        width: 18px;
+        display: inline-block;
+        padding-top: 15px;
+        color: #666666;
+    }
+
+    &-link {
+        color: #000000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &-click {
+        display: none;
+    }
+    &-toggle {
+        margin-right: 10px;
+        display: none;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        &-toggle {
+            margin-right: 10px;
+            display: none;
+            font-size: 30px;
+            color: black;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        // display: none;
+        &-button {
+            display: none;
+        }
+        &-click {
+            display: block;
+        }
+        &-toggle {
+            display: block;
+        }
+    }
+    @media screen and (max-width: 414px) {
+        &-toggle {
+            display: block;
+        }
+        &-button {
+            display: none;
+        }
+        &-icon {
+            margin-left: 110px;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        background: red;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        // box-shadow: rgba(0, 0, 0, 0.5);
+        width: 280px;
+        flex-direction: column;
+        align-items: stretch;
+        z-index: 9;
+        transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transform: translateX(100%);
+        justify-content: normal;
+        &.is-show {
+            transform: translateX(0);
+        }
+        &-link {
+            margin-top: 15px;
+            display: block;
+            padding: 5px 25px;
+            border: none;
+        }
+        &-link:hover {
+            border: none;
+            font-weight: 700;
+        }
+        &-shopping {
+            display: none;
+        }
+        &-toggle {
+            display: block;
+        }
+
+        &-item {
+            margin-bottom: 15px;
+        }
+    }
+}

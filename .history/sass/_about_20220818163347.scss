@@ -1,0 +1,120 @@
+.about {
+    height: 690px;
+    background: #232340;
+    // background-image: url(../images/backgroundabout.png);
+    &-main {
+        display: flex;
+    }
+    &-img1 {
+        width: 270px;
+        margin-top: 100px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    &-img2 {
+        width: 200px;
+        margin-bottom: -60px;
+    }
+    &-img3 {
+        width: 200px;
+        margin-left: 110px;
+    }
+    &-us {
+        color: white;
+    }
+    &-number {
+        margin-bottom: 10px;
+        margin-top: 172px;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &-title {
+        width: 511px;
+        font-weight: 600;
+        line-height: 39px;
+        font-size: 26px;
+    }
+    &-name {
+        display: inline-block;
+        font-size: 22px;
+        width: 441px;
+        font-weight: 600;
+        line-height: 33px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding-left: 32px;
+        border-left: 3px solid white;
+    }
+
+    &-content {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+        width: 570px;
+        margin-bottom: 40px;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        &-img2 {
+            width: 200px;
+            margin-bottom: -150px;
+        }
+        &-images {
+            margin-left: 20px;
+        }
+    }
+    @media only screen and (min-width: 600px) and (max-width: 1023px) {
+        height: 100%;
+        &-main {
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        &-number {
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        height: 100%;
+        &-main {
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        &-number {
+            display: inline-block;
+            width: 100%;
+            margin-top: 20px;
+        }
+        &-img1 {
+            margin-top: 0px;
+            margin-bottom: 0;
+        }
+        &-img2 {
+            margin-bottom: 0;
+        }
+        &-img3 {
+            margin-left: 75px;
+        }
+        &-name {
+            display: inline-block;
+            font-size: 18px;
+            width: 344px;
+            font-weight: 600;
+            line-height: 33px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 15px;
+            border-left: 3px solid white;
+        }
+        &-title {
+            font-size: 16px;
+        }
+        &-content {
+            margin-top: 13px;
+            width: 324px;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 300;
+        }
+    }
+}
