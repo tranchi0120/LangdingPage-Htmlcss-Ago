@@ -55,7 +55,6 @@
 
     @media only screen and (min-width: 1024px) and (max-width: 1366px) {
         &-circle2 {
-            text-align: center;
             margin: 0;
             color: black;
             height: 400px;
@@ -67,13 +66,11 @@
             display: none;
         }
         &-circle {
-            text-align: center;
             height: 400px;
         }
     }
     @media only screen and (min-width: 600px) and (max-width: 1023px) {
         &-circle2 {
-            text-align: center;
             margin: 0;
             color: black;
             height: 400px;
@@ -85,14 +82,12 @@
             display: none;
         }
         &-circle {
-            text-align: center;
             height: 400px;
         }
     }
 
     @media screen and (max-width: 414px) {
         &-circle2 {
-            text-align: center;
             margin: 0;
             color: black;
             height: 400px;
@@ -104,7 +99,6 @@
             display: none;
         }
         &-circle {
-            text-align: center;
             height: 400px;
         }
     }

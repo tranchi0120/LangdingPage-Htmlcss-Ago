@@ -99,7 +99,7 @@
         align-items: stretch;
         z-index: 9;
         transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        transform: translateX(200%);
+        transform: translateX(100%);
         justify-content: normal;
         &.is-show {
             width: 100%;
