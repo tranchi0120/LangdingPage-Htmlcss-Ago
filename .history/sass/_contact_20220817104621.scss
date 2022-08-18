@@ -1,0 +1,65 @@
+.contact {
+    background: #323259;
+    height: 600px;
+    &-main {
+        padding-top: 100px;
+        margin: 0 auto;
+    }
+
+    &-number {
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-weight: 600;
+        line-height: 24px;
+        color: white;
+        font-size: 16px;
+    }
+    &-title {
+        display: block;
+        font-size: 26px;
+        line-height: 39px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: white;
+        margin-bottom: 37px;
+    }
+    &-input {
+        padding: 12px;
+        border-radius: 5px;
+        height: 45px;
+        width: 270px;
+        border: none;
+    }
+    &-import {
+        margin: 0 auto;
+        width: 570px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 30px;
+    }
+    &-textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+        height: 130px;
+        width: 570px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &-button {
+        margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1023px) {
+    }
+
+    @media screen and (max-width: 414px) {
+        &-import {
+            margin: 0 auto;
+            width: 570px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px 30px;
+        }
+    }
+}

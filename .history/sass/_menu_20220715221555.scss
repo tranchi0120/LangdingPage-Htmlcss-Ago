@@ -1,0 +1,28 @@
+.menu {
+    height: 24px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 40px;
+    &-button {
+        display: flex;
+        gap: 29px;
+    }
+    &-icon {
+        width: 18px;
+        display: inline-block;
+        padding-top: 15px;
+        color: #666666;
+    }
+
+    &-link {
+        color: #000000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        display: none;
+    }
+}

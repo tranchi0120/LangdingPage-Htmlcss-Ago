@@ -1,0 +1,142 @@
+.latest {
+    background: #f7f3f8;
+    padding-bottom: 50px;
+    // height: 854px;
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 100px;
+        gap: 30px;
+    }
+    &-number {
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-weight: 600;
+        line-height: 24px;
+        color: #5468e7;
+        font-size: 16px;
+    }
+    &-title {
+        font-size: 26px;
+        line-height: 39px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    &-content {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        width: 325px;
+        margin-bottom: 35px;
+    }
+    &-icon {
+        display: flex;
+        gap: 10px;
+        &-left {
+            background: #232340;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            padding: 13px;
+            border-radius: 50%;
+            color: white;
+        }
+        &-right {
+            background: #5468e7;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            padding: 13px;
+            border-radius: 50%;
+            color: white;
+        }
+    }
+    &-groups {
+        border-radius: 20px;
+        width: 570px;
+        display: flex;
+        height: 280px;
+        background: white;
+        gap: 70px;
+        padding: 33px 33px;
+    }
+    &-text {
+        margin-top: 45px;
+        font-weight: 400;
+        line-height: 27px;
+        font-size: 18px;
+        width: 213px;
+        color: #000000;
+    }
+    &-groups3 {
+        color: #ffffff;
+        border-radius: 20px;
+        width: 570px;
+        display: flex;
+        height: 280px;
+        background: #232340;
+        gap: 70px;
+        padding: 33px 33px;
+    }
+    &-text3 {
+        margin-top: 45px;
+        font-weight: 400;
+        line-height: 27px;
+        font-size: 18px;
+        width: 213px;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        &-groups {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            padding: 33px 20px;
+        }
+        &-groups3 {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            padding: 33px 20px;
+        }
+        &-main {
+            margin-right: 10px;
+        }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1023px) {
+        &-main {
+            display: block;
+        }
+        &-groups {
+            margin: 20px;
+            width: inherit;
+        }
+        &-groups3 {
+            margin: 20px;
+            width: inherit;
+        }
+        &-group {
+            padding: 0 30px;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        &-main {
+            display: block;
+        }
+        &-groups {
+            margin: 20px;
+            width: inherit;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        &-groups3 {
+            margin: 20px;
+            width: inherit;
+        }
+        &-group {
+            padding: 0 30px;
+        }
+    }
+}

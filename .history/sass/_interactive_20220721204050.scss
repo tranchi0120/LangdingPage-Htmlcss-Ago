@@ -1,0 +1,44 @@
+.interactive {
+    background: #f7f3f8;
+    height: 752px;
+    &-number {
+        margin-bottom: 10px;
+        margin-top: 100px;
+        display: inline-block;
+        color: #5468e7;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    &-name {
+        display: inline-block;
+        line-height: 39px;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 75px;
+    }
+    &-iconleft {
+        margin-right: 19px;
+        margin-left: 594px;
+    }
+    &-box {
+        max-height: 360px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        border-radius: 30px;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        &-box {
+            max-height: 360px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            border-radius: 30px;
+            grid-gap: 10px;
+        }
+        &-iconright {
+            margin-right: 30px;
+        }
+    }
+}
